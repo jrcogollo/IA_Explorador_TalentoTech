@@ -2,6 +2,15 @@ import streamlit as st
 
 st.title('Calculadora Simple con Streamlit')
 
+
+opcion = st.selectbox(
+    "Selecciona tu lenguaje favorito:",
+    ["Python", "JavaScript", "C#", "Java", "Go"]
+)
+
+st.write("Elegiste:", opcion)
+
+
 valor1 = st.number_input('Introduce el primer valor:', min_value=0.0, value=10.0)
 
 valor2 = st.number_input('Introduce el segundo valor:', min_value=0.0, value=5.0)
