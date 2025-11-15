@@ -40,3 +40,5 @@ if st.button('Calcular Suma'):
 st.subheader('Valores Ingresados')
 st.write(f'Primer valor: **{valor1}**')
 st.write(f'Segundo valor: **{valor2}**')
+
+number = st.slider("Pick a number", 0, 100)
